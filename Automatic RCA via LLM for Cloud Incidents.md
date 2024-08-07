@@ -11,16 +11,9 @@ Cloud computing serves as one of the most important infrastructure. With the gro
 But, as with great power cloud systems comes with its own complexity. These complexity makes the system more vulnerable to variety of incidents that can pose a significant challenges to above three crucial properties.
 
 ### Typical Incident Life Cycle
-- Detection
-- Triaging
-- Diagnosis
-- Mitigation
 
-**Detection:** When an anomalous system behaviour has been observed, an alert is raised by the system or users of the service.
-
-**Triaging:** Once detected, this incident will be assigned to the appropriate engineering team.
-
-**Diagnosis:** Assigned On-call engineer analyses different aspects of the issue and have several round of back and forth communication to identify the root cause.
-
-**Mitigation:** Once analysed, several actions are taken by the on-call engineer to mitigate the issue and restore the service to be performing health.
+- **Detection:** When an anomalous system behaviour has been observed, an alert is raised by the system or users of the service.
+- **Triaging:** Once detected, this incident will be assigned to the appropriate engineering team.
+- **Diagnosis:** Assigned On-call engineer analyses different aspects of the issue and have several round of back and forth communication to identify the root cause.
+- **Mitigation:** Once analysed, several actions are taken by the on-call engineer to mitigate the issue and restore the service to be performing health.
 
