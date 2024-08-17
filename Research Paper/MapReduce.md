@@ -16,3 +16,11 @@ Due to this complexity, Google came up with the abstraction which will simply le
 
 This abstraction is inspired by the map and reduce primitives that are present in LISP and many other functional languages.
 
+They realized that most of the computations requires applying of the map function to each of the logical record in the input to derive the intermediate key/value pairs which will be passed through reduce function. Here reduce function will combine all the values shared by the same key.
+
+# **Programming Model**
+In simple words, computation takes the input key-value pairs and outputs the set of key-value pairs. User has to provide the two function: `map` and `reduce`.
+
+`Map` written by the user will take the input pair and produces a set of intermediate key-value pairs. The `MapReduce` library groups together all intermediate key-value associated with the same intermediate key and passes them to the `Reduce` function.
+
+The `Reduce` function, which is also written by user take the intermediate key (let's say K) and set of value for that key K.  It will merge together all the values for that key. Here, the intermediate values are provided to reduce function through `iterator`. This helps to handle list of values which are large to fit into memory.
