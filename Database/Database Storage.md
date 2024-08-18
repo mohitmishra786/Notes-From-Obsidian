@@ -15,6 +15,6 @@ Once, it is available in Virtual Memory, our process can jump to any offset in t
 Since the process can now jump to any offset in that address space in memory, the OS is in charge of determing whether or not the object you need is in memory. If not, it the  fetches the page we need and brings it into memory. Here DBMS doesn't handle any of the data management; it simply opens the file and OS moves the data back and forth for all of us. 
 
 Let's take an example from below image.
-file:///home/chessman/Downloads/NullvsEmpty(1).png
+![[Pasted image 20240818132846.png]]
 
 Let's say user has to access 
