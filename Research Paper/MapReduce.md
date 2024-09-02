@@ -24,3 +24,4 @@ In simple words, computation takes the input key-value pairs and outputs the set
 `Map` written by the user will take the input pair and produces a set of intermediate key-value pairs. The `MapReduce` library groups together all intermediate key-value associated with the same intermediate key and passes them to the `Reduce` function.
 
 The `Reduce` function, which is also written by user take the intermediate key (let's say K) and set of value for that key K.  It will merge together all the values for that key. Here, the intermediate values are provided to reduce function through `iterator`. This helps to handle list of values which are large to fit into memory.
+
