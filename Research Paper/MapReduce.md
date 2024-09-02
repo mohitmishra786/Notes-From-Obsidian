@@ -25,3 +25,10 @@ In simple words, computation takes the input key-value pairs and outputs the set
 
 The `Reduce` function, which is also written by user take the intermediate key (let's say K) and set of value for that key K.  It will merge together all the values for that key. Here, the intermediate values are provided to reduce function through `iterator`. This helps to handle list of values which are large to fit into memory.
 
+Conceptually map and reduce provided by the user are of below types:
+- map       (k1, v1)           ---> list(k2, v2)
+- reduce   (k2, list (v2)) ---> list(v2)
+
+There are many programs that can be easily expressed as MapReduce computations such as Distributed Grep, Count of URL Access Frequency, Reverse Web-Link Graph, Term-Vector per Host, Inverted Index and Distributed Sort.
+
+# Implementation
